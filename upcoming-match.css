@@ -2,39 +2,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* banner starts */
 .top-banner {
     background-color: #161616;
-    margin: 60px 130px;
+    margin: 60px 120px;
     border-radius: 30px;
     display: flex;
 }
 
 .title {
     padding: 93px 101px;
-
 }
 
-
-.title h1 {
+h1 {
     color: #FFFFFF;
     font-size: 40px;
-    transition: 0.5s ease-out 0.5s;
-}
-
-.title h1:hover {
-    transform: translate(350px, -50px);
 }
 
 .title p {
     color: #FFFFFF;
     font-size: 15px;
     padding-bottom: 10px;
-    transition: 0.5s ease-out 0.5s;
-}
-
-.title p:hover {
-    transform: translate(350px, -50px);
 }
 
 button {
@@ -54,6 +41,7 @@ button span {
     width: 50%;
     padding-left: 2%;
 
+
 }
 
 .images img {
@@ -61,7 +49,6 @@ button span {
     padding: 2%;
 
 }
-
 
 /*   banner ends */
 
@@ -148,9 +135,7 @@ button span {
 }
 
 /*  button-fixture ends 
-*/
-
-/* card starts */
+    */
 .aside-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -161,63 +146,48 @@ button span {
 
 }
 
-.card-details {
+.upcomming-match {
+    display: flex;
+    flex-direction: column;
     width: 312px;
     height: 362px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
 }
 
-.card-details h2 {
-    font-size: 14px;
-    margin: 14px;
+.match-flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-.transfer-btn {
-    width: 90px;
-    padding: 5px 5px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    margin: 14px 14px;
+.match-flag span h1 {
+    font-size: 14;
     color: #161616;
-    text-align: center;
+}
+
+.match-siduil h1 {
+
     font-size: 14px;
+    color: #161616;
+    padding-right: 45px;
 }
 
-.card-duration {
-
-    color: gray;
-    font-size: 13px;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 14px;
-    margin-left: 5px;
-
+.match-siduil p {
+    font-size: 14px;
+    color: #161616;
+    padding-right: 45px;
 }
 
-.view-all {
-    display: none;
+.match-siduil h1,
+p {
+    margin-bottom: 25px;
+    margin-left: 22px;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.view-all a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
-    background-color: #d08b22;
-}
-
-.view-all a:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid #d08b22;
-}
-
-
-/* card ends */
-/* footer starts */
 .footer-distributed {
     background: black;
     text-align: center;
@@ -229,7 +199,7 @@ button span {
 }
 
 .footer h2 {
-    padding-right: 0.2%;
+    padding-right: 6.5%;
 }
 
 .hr-line {
@@ -243,7 +213,7 @@ button span {
 .footer-links {
     display: flex;
     justify-content: center;
-    padding-left: 10%;
+
 }
 
 .footer-links a {
@@ -270,9 +240,7 @@ button span {
 }
 
 
-
 /* footer ends */
-
 /* media queries */
 @media only screen and (max-width: 688px) {
 
@@ -297,12 +265,6 @@ button span {
     .aside-right {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    .all-group .btn1:hover {
-        background-color: #d08b22;
     }
 
     .footer-distributed {
@@ -345,84 +307,6 @@ button span {
     .social-icon {
         margin-left: 60%;
         margin-left: 20%;
-    }
-
-
-}
-
-@media only screen and (min-width:689px) and (max-width:992px) {
-
-    .top-banner {
-        justify-content: center;
-        align-items: center;
-        height: 800px;
-        width: 100%;
-        margin: 0% 0%;
-        display: flex;
-
-
-    }
-
-    .title {
-        padding: 100px 175px;
-    }
-
-    .image img {
-        width: 300px;
-        height: 340px;
-
-        margin-bottom: 45%;
-        margin-right: 85%;
-    }
-
-
-    .aside {
-        flex-direction: column;
-        margin: 0px 0px;
-        align-items: center;
-        margin-bottom: 0px;
-
-    }
-
-    .aside-left {
-        background-color: white;
-        height: 0px;
-        padding: 0px;
-        width: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border-radius: 20px;
-        border: 1px solid white;
-
-    }
-
-    .aside-right {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 10%;
-    }
-
-    .view-all {
-        display: flex;
-        margin-left: 45%;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        text-align: center;
-
-
-    }
-
-    .footer-links {
-        flex-direction: row;
-
-        flex-wrap: wrap;
-    }
-
-    .footer-distributed {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
 }
